@@ -1,0 +1,10 @@
+{
+  "name": "data-product-release-hub",
+  "version": "1.0.0",
+  "description": "数据产品发布台：数据集/指标/质量门禁/版本/订阅方，发布冻结快照与依赖检查，下线/回滚/权限收窄通知订阅方",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "verify": "node test/verify.js"
+  }
+}

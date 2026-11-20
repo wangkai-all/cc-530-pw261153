@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数据产品发布台</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">◈</span>
+    <h1>数据产品发布台</h1>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button data-page="overview" class="tab active">产品总览</button>
+    <button data-page="pipelines" class="tab">发布流水线</button>
+    <button data-page="impact" class="tab">依赖影响</button>
+    <button data-page="subscribers" class="tab">订阅状态</button>
+    <button data-page="rollbacks" class="tab">回滚记录</button>
+  </nav>
+  <div class="top-actions">
+    <button id="btn-recover" class="btn ghost" title="扫描并恢复中途崩溃的发布">恢复扫描</button>
+    <button id="btn-theme" class="btn ghost" title="切换明暗">◐</button>
+  </div>
+</header>
+
+<main id="main">
+  <section id="page-overview" class="page active"></section>
+  <section id="page-pipelines" class="page"></section>
+  <section id="page-impact" class="page"></section>
+  <section id="page-subscribers" class="page"></section>
+  <section id="page-rollbacks" class="page"></section>
+</main>
+
+<div id="toast" class="toast hidden"></div>
+<div id="tooltip" class="tooltip hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
